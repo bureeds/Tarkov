@@ -3,8 +3,11 @@ body{
     margin: 0;
 }
 img{
-    width: 100%;
-    
+    margin-left: 5%;
+    width: 90%;
+    border: 3px solid crimson;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 #woods{
     width: 70%;
@@ -15,15 +18,22 @@ iframe{
     width: 80%;
     height: 800px;
     margin-left: 10%;
+    border: 3px solid crimson;
+    border-radius: 20px;
 }
-button{
+.hbutton{
     height: 50px;
-    width: 150px;
+    width: 10%;
     background-color: crimson;
     margin: 0;
     margin-top: 25px;
+    margin-left: 20px;
     border: none;
     font-size: 16px;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: darkred;
 }
 h1{
     color: white;
@@ -49,4 +59,45 @@ h1{
     line-height: 100px;
     font-size: 24px;
 
+}
+#marketBttn{
+    height: 50px;
+    width: 150px;
+    background-color: darkred;
+    border: none;
+    border-top-left-radius: 20px;
+    font-size: 16px;
+}
+#ammoBttn{
+    height: 50px;
+    width: 150px;
+    background-color: crimson;
+    border: none;
+    font-size: 16px;
+}
+#hideoutBttn{
+    height: 50px;
+    width: 150px;
+    background-color: crimson;
+    border: none;
+    border-top-right-radius: 20px;
+    font-size: 16px;
+}
+#marketBttn:hover{
+    background-color: darkred;
+}
+#ammoBttn:hover{
+    background-color: darkred;
+}
+#hideoutBttn:hover{
+    background-color: darkred;
+}
+.changehtml{
+    text-align: center;
+}
+.footer{
+    color: white;
+    background-color: black;
+    height: 25px;
+    text-align: center;
 }

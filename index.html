@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="topic">Bureeds Tarkov Shit-Site</div>
     <div class="buttons">
-    <button id="onoffCustoms" onclick="showMapCustoms();" value="Off">Customs map</button>
-    <button id="onoffWoods" onclick="showMapWoods();" value="Off">Woods map</button>
-    <button id="onoffShoreline" onclick="showMapShoreline();" value="Off">Shoreline map</button>
-    <button id="onoffFactory" onclick="showMapFactory();" value="Off">Factory map</button>
-    <button id="onoffReserve" onclick="showMapReserve();" value="Off">Reserve map</button>
-    <button id="onoffLab" onclick="showMapLab();" value="Off">The Lab map</button>
-    <button id="onoffInterchange" onclick="showMapInterchange();" value="Off">Interchange map</button>
+    <button class="hbutton" id="onoffCustoms" onclick="showMapCustoms();" value="Off">Customs map</button>
+    <button class="hbutton" id="onoffWoods" onclick="showMapWoods();" value="Off">Woods map</button>
+    <button class="hbutton" id="onoffShoreline" onclick="showMapShoreline();" value="Off">Shoreline map</button>
+    <button class="hbutton" id="onoffFactory" onclick="showMapFactory();" value="Off">Factory map</button>
+    <button class="hbutton" id="onoffReserve" onclick="showMapReserve();" value="Off">Reserve map</button>
+    <button class="hbutton" id="onoffLab" onclick="showMapLab();" value="Off">The Lab map</button>
+    <button class="hbutton" id="onoffInterchange" onclick="showMapInterchange();" value="Off">Interchange map</button>
     </div>
+    <div class="header"></div>
     <img id="customs" src="customs.png" alt="customs map" style="display: none;">
     <img id="woods" src="woods.jpg" alt="woods map" style="display: none;">
     <img id="shoreline" src="Shoreline.jpg" alt="shoreline map" style="display: none;">
     <img id="factory" src="factory.jpg" alt="factory map" style="display: none;">
     <img id="reserve" src="reserve.png" alt="reserve map" style="display: none;">
     <div class="header"></div>
-    <iframe src="https://tarkov-market.com/"></iframe>
+    <div class="changehtml">
+    <button id="marketBttn" onclick="changeAtMarket();">Market</button>
+    <button id="ammoBttn" onclick="changeAtAmmo();">Ammo</button>
+    <button id="hideoutBttn" onclick="changeAtHideout();">Hideout</button>
+    </div>
+    <iframe id="frame" src="https://tarkov-market.com/"></iframe>
     <div class="header"></div>
-    <iframe src="https://escape-tarkov.herokuapp.com/ammo"></iframe>
-    <div class="header"></div>
-    <iframe src="https://tarkov-calculator.herokuapp.com/"></iframe>
+    <div class="footer">Created by <b>Bureeds</b></div>
     <script src="script.js"></script>
 </body>
 </html>

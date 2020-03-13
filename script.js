@@ -64,15 +64,18 @@ function showMapShoreline(){
 function showMapFactory(){
   currentvalue = document.getElementById('onoffFactory').value;
   if(currentvalue == "Off"){
+
     document.getElementById("onoffFactory").value="On";
     mapCustoms.style = "display: none;";
     mapWoods.style = "display: none;";
     mapShoreline.style = "display: none;";
-    mapFactory.style = "display: ;";
+    mapFactory.style = "display: ; background-color: darkred;";
     mapReserve.style = "display: none;";
     mapLab.style = "display: none;";
     mapInterchange.style = "display: none;";
+    
   }else{
+    
     document.getElementById("onoffFactory").value="Off";
     mapFactory.style = "display: none;";
   }
@@ -92,4 +95,22 @@ function showMapReserve(){
     document.getElementById("onoffReserve").value="Off";
     mapReserve.style = "display: none;";
   }
+}
+function changeAtMarket(){
+  document.getElementById('frame').src = "https://tarkov-market.com/";
+  document.getElementById('marketBttn').style = "background-color: darkred;";
+  document.getElementById('hideoutBttn').style = "background-color: crimson;";
+  document.getElementById('ammoBttn').style = "background-color: crimson;";
+}
+function changeAtAmmo(){
+  document.getElementById('frame').src = "https://escape-tarkov.herokuapp.com/ammo";
+  document.getElementById('marketBttn').style = "background-color: crimson;";
+  document.getElementById('hideoutBttn').style = "background-color: crimson;";
+  document.getElementById('ammoBttn').style = "background-color: darkred;";
+}
+function changeAtHideout(){
+  document.getElementById('frame').src = "https://tarkov-calculator.herokuapp.com/";
+  document.getElementById('marketBttn').style = "background-color: crimson;";
+  document.getElementById('hideoutBttn').style = "background-color: darkred;";
+  document.getElementById('ammoBttn').style = "background-color: crimson;";
 }
