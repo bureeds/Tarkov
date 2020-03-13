@@ -1,10 +1,52 @@
 body{
     background-color: #3D3D3D;
+    margin: 0;
 }
 img{
     width: 100%;
     
 }
+#woods{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+iframe{
+    width: 80%;
+    height: 800px;
+    margin-left: 10%;
+}
 button{
-    display: none;
+    height: 50px;
+    width: 150px;
+    background-color: crimson;
+    margin: 0;
+    margin-top: 25px;
+    border: none;
+    font-size: 16px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.buttons{
+    height: 100px;
+    text-align: center;
+    background-color: black;
+}
+.topic{
+    height: 100px;
+    background-color: whitesmoke;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+}
+.header{
+    color:white;
+    height: 60px;
+    text-align: center;
+    background-color: #3D3D3D;
+    line-height: 100px;
+    font-size: 24px;
+
 }
